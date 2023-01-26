@@ -26,16 +26,11 @@ let user = thepeer.indexUser({ ...userPayload });
         - signature (object)
     - `returns`: boolean
     
-* getSendReceipt
+* authorizeCharge
     - `accepts`: 
-        - receipt_id (string)
-    - `returns`: object
-    
-* processSendReceipt
-    - `accepts`: 
-        - receipt_id (string)
+        - reference (string)
         - event (string)
-    - `returns`: object
+    - `returns`: boolean
     
 * indexUser
     - `accepts`:
@@ -58,19 +53,13 @@ let user = thepeer.indexUser({ ...userPayload });
     
 * getLink
     - `accepts`:
-        - lind_id (string)
+        - link_id (string)
     - `returns`: object
 
 * chargeLink
     - `accepts`:
-        - lind_id (string)
+        - link_id (string)
         - amount (integer)
-    - `returns`: object
-    
-* authorizeDirectCharge
-    - `accepts`:
-        - reference (string)
-        - event (string)
     - `returns`: object
 
 ## Extra
