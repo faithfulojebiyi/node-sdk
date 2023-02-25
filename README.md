@@ -61,6 +61,10 @@ let user = thepeer.indexUser({ ...userPayload });
         - link_id (string)
         - amount (integer)
     - `returns`: object
+* getBusinesses
+    - `accepts`:
+        - channel (string)
+    - `returns`: object
 
 ## Extra
 
